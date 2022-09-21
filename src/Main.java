@@ -14,10 +14,10 @@ public class Main {
 
         HavingSuperAbility heroes []={harryPotter, malysheva, aragorn};
         for (int i = 0; i < heroes.length; i++) {
-            if (heroes[i]instanceof Medic)
-            ((Medic) heroes[i]).increaseExperience();
+            if (heroes[i] instanceof Medic) {
+                ((Medic) heroes[i]).increaseExperience();
+            }
             heroes[i].applySuperAbility();
         }
-
     }
 }
